@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F1F1F1;
+  color: #333333;
+}
+
+header {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header .hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+header .hero p {
+  font-size: 1.2em;
+}
+
+/* About Section */
+.about {
+  padding: 40px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.about img {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+/* Services Section */
+.services {
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.services .service-item {
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+}
+
+.services .service-item img {
+  width: 100%;
+  height: auto;
+}
+
+.services .service-item p {
+  padding: 10px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  background-color: #FF5722;
+  color: white;
+  text-align: center;
+}
+
+.contact form input, .contact form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333333;
+  color: white;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  header .hero h1 {
+      font-size: 2em;
+  }
+
+  .services .service-item {
+      width: 100%;
+      margin: 20px 0;
+  }
+
+  .contact form input, .contact form textarea {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .hero h1 {
+      font-size: 1.5em;
+  }
+
+  header .hero p {
+      font-size: 1em;
+  }
+}
